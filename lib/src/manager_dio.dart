@@ -55,11 +55,11 @@ class DioCacheManager {
     if (null != _obj) {
       dynamic data = _obj.content;
       data = jsonDecode(utf8.decode(data));
-      debugPrint("\ngetCacheWithUrl, url: $url,\nkey:$key, subKey:$subKey \ndata: $data");
+      // debugPrint("\ngetCacheWithUrl, url: $url,\nkey:$key, subKey:$subKey \ndata: $data");
       // return _buildResponse(_obj, _obj.statusCode, options);
       return data;
     } else {
-      debugPrint("\ngetCacheWithUrl, url: $url,\nkey: $key, subKey: $subKey \ndata: null");
+      // debugPrint("\ngetCacheWithUrl, url: $url,\nkey: $key, subKey: $subKey \ndata: null");
       return null;
     }
   }
